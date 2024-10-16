@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-public class AudioToFace
+public class NeuroSync_Connect
  {
      private static readonly string ApiKey = "YOUR-API-KEY"; // API key for the remote server
      private static readonly string LocalUrl = "http://127.0.0.1:5000/audio_to_blendshapes"; // Local URL
      private static readonly string RemoteUrl = "https://api.neurosync.info/audio_to_blendshapes"; // Remote URL
 
-     public static async Task<List<List<float>>> SendAudioToAudio2Face(byte[] audioBytes, bool useLocal=false)
+     public static async Task<List<List<float>>> SendAudioToNeuroSync(byte[] audioBytes, bool useLocal=false)
      {
          if (!ValidateAudioBytes(audioBytes))
          {
